@@ -1,0 +1,5 @@
+node_modules/*
+codemirror.zip
+CodeMirror-master/*
+addon/*
+mode/*
