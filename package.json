@@ -2,8 +2,8 @@
   "name": "codemirror-esm",
   "version": "1.0.0",
   "description": "esm variants of codemirror modes and addons",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "lint": "eslint --fix 'src/**/*.js'",
     "build": "node convert.js && npm run lint && rollup -c",
