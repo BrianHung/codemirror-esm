@@ -2,21 +2,24 @@
   "name": "codemirror-esm",
   "version": "1.0.0",
   "description": "esm variants of codemirror modes and addons",
-  "main": "src/index.js",
-  "module": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "lint": "eslint --fix 'src/**/*.js'",
-    "build": "node convert.js"
+    "build": "node convert.js && npm run lint && rollup -c",
+    "rollup": "rollup -c"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
     "adm-zip": "^0.5.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",
     "fs-extra": "^9.0.1",
     "gulp": "^4.0.2",
     "gulp-strip-comments": "^2.5.2",
+    "rollup": "^2.34.2",
     "superagent": "^6.1.0"
   }
 }
